@@ -1,0 +1,75 @@
+﻿<Window x:Class="Tutorial01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tutorial01"
+        mc:Ignorable="d"
+        Title="tp01_wpf" Height="500" Width="850">
+
+    <Grid >
+        <!--console-->
+        <Label Name="LB_console" Content="" HorizontalAlignment="Center" Margin="0,424,0,0" VerticalAlignment="Top" Width="830" Height="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" BorderBrush="#000000" BorderThickness="2"/>
+        <!---->
+        <!-- EXO 1-->
+        <Label Name="LB_exoConsole" Content="1er exercice :" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="280" Margin="10,10,0,0" FontSize="20" HorizontalContentAlignment="Center" FontWeight="Bold" VerticalContentAlignment="Center"/>
+
+        <Label Content="1er chiffre :" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="113" Margin="10,47,0,0" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Name="TB_nb1" HorizontalAlignment="Left" Height="32" Margin="128,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162"/>
+
+        <Label Content="2eme chiffre :" HorizontalAlignment="Left" Height="32" Margin="10,84,0,0" VerticalAlignment="Top" Width="113" FontSize="14" RenderTransformOrigin="0.513,0.095" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Name="TB_nb2" HorizontalAlignment="Left" Height="32" Margin="128,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162"/>
+
+        <Label Content="Le plus grand :" HorizontalAlignment="Left" Height="32" Margin="10,121,0,0" VerticalAlignment="Top" Width="113" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Name="LB_biggest" Content="" HorizontalAlignment="Left" Height="32" Margin="128,121,0,0" VerticalAlignment="Top" Width="81" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="#FFFF0303" BorderThickness="1"/>
+        <Button Content="Tester" HorizontalAlignment="Left" Margin="214,121,0,0" VerticalAlignment="Top" Height="32" Width="76" Click="BTNonClick_biggest"/>
+        <!-- -->
+        <!-- EXO 2-->
+        <Label Content="2eme exercice :" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="280" Margin="10,162,0,0" FontSize="20" HorizontalContentAlignment="Center" FontWeight="Bold" VerticalContentAlignment="Center"/>
+
+        <Label Content="Taille (m) :" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="113" Margin="10,199,0,0" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Name="TB_height" HorizontalAlignment="Left" Height="32" Margin="128,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162"/>
+
+        <Label Content="Poids (kg) :" HorizontalAlignment="Left" Height="32" Margin="10,236,0,0" VerticalAlignment="Top" Width="113" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Name="TB_weight" HorizontalAlignment="Left" Height="32" Margin="128,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162"/>
+
+        <Label Content="Age :" HorizontalAlignment="Left" Height="32" Margin="10,273,0,0" VerticalAlignment="Top" Width="113" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Name="TB_age" HorizontalAlignment="Left" Height="32" Margin="128,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162"/>
+        <!--Rajouter le sexe-->
+
+        <Label Content="IMC :" HorizontalAlignment="Left" Height="32" Margin="10,354,0,0" VerticalAlignment="Top" Width="113" FontSize="14"/>
+        <Label Name="LB_imc" Content="" HorizontalAlignment="Left" Height="32" Margin="128,354,0,0" VerticalAlignment="Top" Width="81" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="#FFFF0303" BorderThickness="1"/>
+        <Button Content="Tester IMC" HorizontalAlignment="Left" Margin="214,354,0,0" VerticalAlignment="Top" Height="32" Width="76" Click="BTNonClick_imc"/>
+        <!-- -->
+        <!--exo 3-->
+        <Label Content="3eme exercice :" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="307" Margin="300,10,0,0" FontSize="20" HorizontalContentAlignment="Center" FontWeight="Bold" VerticalContentAlignment="Center"/>
+
+        <Label Content="Combien de nombres a tester ?" HorizontalAlignment="Left" Height="32" Margin="300,48,0,0" VerticalAlignment="Top" Width="221" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Name="TB_oddEven" HorizontalAlignment="Left" Height="32" Margin="526,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81"/>
+        <Button Content="Tester la parité " HorizontalAlignment="Left" Margin="526,85,0,0" VerticalAlignment="Top" Height="71" Width="81" Click="BTNonClick_oddEven"/>
+
+        <ListBox Name="list_oddEven_result" Margin="300,85,0,0" Height="71" Width="218" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FFFF0303" BorderThickness="1"/>
+        <!---->
+        <!--exo  4-->
+        <Label Content="4eme exercice :" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="307" Margin="300,165,0,0" FontSize="20" HorizontalContentAlignment="Center" FontWeight="Bold" VerticalContentAlignment="Center"/>
+
+        <TextBox Name="tb_arrayNbr" HorizontalAlignment="Left" Height="32" Margin="459,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <Label Content="Liste de nombres ex 6,4" HorizontalAlignment="Left" Height="32" Margin="300,203,0,0" VerticalAlignment="Top" Width="154" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Label Content="Plus bas - Plus grand :" HorizontalAlignment="Left" Height="33" Margin="300,240,0,0" VerticalAlignment="Top" Width="154" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Name="LB_arrayBiggestLowest" Content="" HorizontalAlignment="Left" Height="33" Margin="459,240,0,0" VerticalAlignment="Top" Width="148" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="#FFFF0303" BorderThickness="1"/>
+        <Button Content="Tester" HorizontalAlignment="Left" Margin="612,203,0,0" VerticalAlignment="Top" Height="70" Width="81" Click="BTNonClick_minMax"/>
+
+        <!---->
+        <!--exo 5-->
+        <Label Content="5eme exercice :" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="307" Margin="300,278,0,0" FontSize="20" HorizontalContentAlignment="Center" FontWeight="Bold" VerticalContentAlignment="Center"/>
+
+        <Label Content="A inverser" HorizontalAlignment="Left" Height="32" Margin="300,316,0,0" VerticalAlignment="Top" Width="77" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Name="TB_right" HorizontalAlignment="Left" Height="32" Margin="382,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225"/>
+        <Button Content="Inverser" HorizontalAlignment="Left" Margin="523,353,0,0" VerticalAlignment="Top" Height="33" Width="81" Click="BTNonClick_inverse"/>
+        <Label Name="LB_inverse" Content="" HorizontalAlignment="Left" Height="33" Margin="300,353,0,0" VerticalAlignment="Top" Width="218" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="#FFFF0303" BorderThickness="1"/>
+        <!---->
+    </Grid>
+</Window>
+    
+    
